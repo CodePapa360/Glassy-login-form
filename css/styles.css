@@ -14,16 +14,15 @@ body {
     min-height: 100vh;
     color: rgba(255, 255, 255, 0.801);
     overflow: hidden;
+    padding: 1rem;
 }
-
 
 .top-container {
     position: relative;
+    transform: translateY(10rem);
     width: 100%;
-    transform: translateY(calc(50vh - 9rem));
     max-width: 24rem;
     margin: auto;
-    width: 100%;
 }
 
 form {
@@ -32,8 +31,8 @@ form {
     border-radius: 20px;
     padding: 1.5rem;
     backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
-
 
 h1 {
     text-align: center;
@@ -49,7 +48,7 @@ h1 {
 
 .input {
     background-color: var(--clr-white);
-    color: var(--clr-bg);
+    color: white;
     border: 2px solid transparent;
     border-radius: 5px;
     padding: 0 .5rem;
@@ -107,21 +106,20 @@ button:hover{
 .top-container::before {
     content: "";
     position: absolute;
-    height: 25rem;
-    width: 25rem;
+    height: 10rem;
+    width: 10rem;
     border-radius: 50%;
     z-index: -2;
 }
 
-
 .top-container::after {
-    top: -16rem;
-    left: -16rem;
+    top: -5rem;
+    right: 0;
     background: linear-gradient(rgb(102, 255, 0), rgb(0, 204, 255));
 }
 
 .top-container::before {
-    bottom: -16rem;
-    right: -16rem;
+    bottom: -5rem;
+    left: 0;
     background: linear-gradient(rgb(255, 0, 170), rgb(255, 187, 0));
 }
